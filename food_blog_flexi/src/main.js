@@ -3,6 +3,9 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import Vue2Editor from "vue2-editor"; 
+
+Vue.use(Vue2Editor);
 
 Vue.config.productionTip = false
 
