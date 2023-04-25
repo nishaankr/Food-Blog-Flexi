@@ -1,12 +1,26 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+  <div class="app-wrapper">
+    <div class="app">
+      <Navigation />
+      <router-view />
+    </div>
   </div>
 </template>
+
+<script>
+import Navigation from "./components/Navigation";
+export default {
+  name: "app",
+  components: { Navigation },
+  data() {
+    return {};
+  },
+  created() {},
+  mounted() {},
+  methods: {},
+  watch: {},
+};
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap");
